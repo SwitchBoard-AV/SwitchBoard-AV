@@ -227,7 +227,7 @@ async function login(c, out) {
     r.json.licenseId === "AGPL-3.0-or-later" &&
       /Affero General Public License, version 3 or later/.test(r.json.license) &&
       /Brett Cupp/.test(r.json.copyright) &&
-      r.json.sourceUrl === "https://github.com/NovaPrime-Actual/SwitchBoard-AV",
+      r.json.sourceUrl === "https://github.com/SwitchBoard-AV/SwitchBoard-AV",
     r.json,
   );
   const page = await client()("GET", "/");
@@ -265,7 +265,7 @@ async function login(c, out) {
     r = await c3("GET", "/api/about");
     check(
       `SOURCE_URL "${bad}" is ignored (the project's own address is shown)`,
-      r.json.sourceUrl === "https://github.com/NovaPrime-Actual/SwitchBoard-AV",
+      r.json.sourceUrl === "https://github.com/SwitchBoard-AV/SwitchBoard-AV",
       r.json,
     );
     await stop(s);

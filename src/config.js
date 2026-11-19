@@ -49,7 +49,7 @@ export const APP_LICENSE = {
   copyright: "Copyright (c) 2026 Brett Cupp",
 };
 
-const UPSTREAM_SOURCE_URL = "https://github.com/NovaPrime-Actual/SwitchBoard-AV"; // the unmodified program's source
+const UPSTREAM_SOURCE_URL = "https://github.com/SwitchBoard-AV/SwitchBoard-AV"; // the unmodified program's source
 export const APP_SOURCE_URL = /^https?:\/\/[^\s"'<>]+$/.test(process.env.SOURCE_URL || "")
   ? process.env.SOURCE_URL
   : UPSTREAM_SOURCE_URL;

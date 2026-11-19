@@ -5,7 +5,7 @@
 # the self-signed certificate) goes in /data: mount a volume there or it is lost when the container is removed.
 #
 #   docker run -d --name switchboard-av --hostname switchboard-av --restart unless-stopped \
-#     -p 8080:8080 -v switchboard-data:/data ghcr.io/novaprime-actual/switchboard-av:latest
+#     -p 8080:8080 -v switchboard-data:/data ghcr.io/switchboard-av/switchboard-av:latest
 #
 # DOCKER.md has the details, including a Docker Compose example. The Node version matches .nvmrc.
 

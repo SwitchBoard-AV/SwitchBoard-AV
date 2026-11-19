@@ -2,7 +2,7 @@
 
 SwitchBoard-AV, newest first.
 
-## Unreleased
+## v2.16 (11/18/26)
 
 - **Docker image.** A `Dockerfile` and a workflow that publishes the app as an image on the GitHub Container Registry (`ghcr.io/switchboard-av/switchboard-av`, for Intel/AMD and ARM) whenever a release is published. Saved data lives in `/data`, so mount a volume there. A new `DOCKER.md` has the run command, a Docker Compose example and the things to know. Nothing in the app itself changed.
 - **New home.** The project now lives in the SwitchBoard-AV organization on GitHub, at github.com/SwitchBoard-AV/SwitchBoard-AV (the old address redirects). The source link the program shows, the security reporting link and the container image name (`ghcr.io/switchboard-av/switchboard-av`) all point there.

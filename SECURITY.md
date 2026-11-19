@@ -4,7 +4,7 @@
 
 Please **don't open a public issue** for a security problem. Report it privately instead:
 
-1. Go to the [Security tab](https://github.com/NovaPrime-Actual/SwitchBoard-AV/security) of this repository.
+1. Go to the [Security tab](https://github.com/SwitchBoard-AV/SwitchBoard-AV/security) of this repository.
 2. Choose **Report a vulnerability**.
 
 Say what you found, which version you ran (the About window shows it), and how to reproduce it. If you can,

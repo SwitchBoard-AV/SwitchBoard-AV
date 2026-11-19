@@ -25,7 +25,7 @@ Node's built-in modules only.
 
 ### Run it with Docker
 
-Each release is also published as a container image (`ghcr.io/novaprime-actual/switchboard-av`, for Intel/AMD
+Each release is also published as a container image (`ghcr.io/switchboard-av/switchboard-av`, for Intel/AMD
 and ARM). **[DOCKER.md](DOCKER.md)** has the `docker run` command, a Docker Compose example, and what to know
 about keeping the data, the certificate and reaching the screens. The settings in the table below are passed
 to the container the same way as anywhere else, as environment variables.

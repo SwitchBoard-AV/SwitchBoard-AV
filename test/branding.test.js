@@ -255,7 +255,7 @@ const good = { appName: "AV Control", orgName: "Example School", accent: "#59606
       r.json.licenseId === "AGPL-3.0-or-later" &&
       /Affero/.test(r.json.license) &&
       /Brett Cupp/.test(r.json.copyright) &&
-      r.json.sourceUrl === "https://github.com/NovaPrime-Actual/SwitchBoard-AV",
+      r.json.sourceUrl === "https://github.com/SwitchBoard-AV/SwitchBoard-AV",
     r.json,
   );
   const idx = await anon("GET", "/");

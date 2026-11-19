@@ -4,7 +4,7 @@ Each release is published as a container image on the GitHub Container Registry,
 and ARM (such as a Raspberry Pi):
 
 ```
-ghcr.io/novaprime-actual/switchboard-av
+ghcr.io/switchboard-av/switchboard-av
 ```
 
 Tags: `latest` is the newest release, and a version such as `2.15` stays on that release. The image is built
@@ -17,7 +17,7 @@ by [`.github/workflows/docker.yml`](.github/workflows/docker.yml) when a release
 docker run -d --name switchboard-av --hostname switchboard-av --restart unless-stopped \
   -p 8080:8080 -v switchboard-data:/data \
   -e TLS_HOSTS=av.example.org \
-  ghcr.io/novaprime-actual/switchboard-av:latest
+  ghcr.io/switchboard-av/switchboard-av:latest
 ```
 
 Then open `https://<server address>:8080`. The browser warns about the self-signed certificate on the first
@@ -30,7 +30,7 @@ Save this as `compose.yaml` next to where you want to run it, then `docker compo
 ```yaml
 services:
   switchboard-av:
-    image: ghcr.io/novaprime-actual/switchboard-av:latest # or a version, such as :2.15
+    image: ghcr.io/switchboard-av/switchboard-av:latest # or a version, such as :2.15
     container_name: switchboard-av
     hostname: switchboard-av # keep it fixed: see "Certificate names" below
     restart: unless-stopped
